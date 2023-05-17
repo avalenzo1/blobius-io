@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+  --primary-color-hsl: 270, 100%, 50%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background-color: #000000;
+}
+
+html, body, input, button {
+  font-family: 'Nunito', sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container > .game {
+  position: relative;
+}
+
+.container > .game > .modal {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > .game > .modal > .prompt {
+  background-color: rgb(128 0 255 / 75%);
+  border: solid 2pt rgb(255 255 255 / 25%);
+  border-radius: 10px;
+  box-shadow: 0 0 15pt 5pt rgb(128 0 255 / 75%);
+  backdrop-filter: blur(4px);
+  text-align: center;
+  color: #ffffff;
+  padding: 25px;
+}
+
+.container > .game > .modal > .prompt ::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.container > .game > .debug {
+  position: absolute;
+  color: #ffffff;
+  text-shadow: 0 0 1px #ffffff;
+}
+
+.form-control {
+  background-color: transparent;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+{
+    "tick_rate": 45,
+    "arena": {
+      "width": 5000,
+      "height": 5000
+    },
+    "blob": {
+      "mass": 50
+    },
+    "pellets": {
+      "mass": 1,
+      "r": 4
+    }
+  }
