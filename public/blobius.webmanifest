@@ -1,0 +1,22 @@
+{
+  "name": "Blobius.io",
+  "short_name": "Blobius",
+  "description": "",
+  "icons": [
+    {
+      "src": "",
+      "sizes": "",
+      "type": ""
+    },
+    // ...
+    {
+      "src": "",
+      "sizes": "",
+      "type": ""
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}

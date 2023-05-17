@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#000" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="manifest" href="blobius.webmanifest" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/ripple.css" />
+    <script
+      src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+      integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/index.js" defer></script>
+    <script src="/ripple.js" defer></script>
+    <title>Blobius Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="game">
+        <div class="modal">
+          <div class="prompt">
+            <h1>Blobius</h1>
+
+            <form id="form">
+              <div>
+                <input
+                  class="form-control username"
+                  placeholder="Enter a Username"
+                />
+              </div>
+
+              <div>
+                <label>Image URL</label>
+                <input
+                  class="form-control imageUrl"
+                  placeholder="Background Image"
+                />
+              </div>
+              <!--               bgColor, borderColor, textColor -->
+              <div>
+                <label>Background Color</label>
+                <input
+                  class="form-control bgColor"
+                  type="color"
+                  placeholder="bgColor"
+                />
+              </div>
+              <div>
+                <label>Border Color</label>
+                <input
+                  class="form-control borderColor"
+                  type="color"
+                  placeholder="borderColor"
+                />
+              </div>
+              <div>
+                <label>Text Color</label>
+                <input
+                  class="form-control textColor"
+                  type="color"
+                  placeholder="textColor"
+                />
+              </div>
+              <button class="btn ripple" ripple-hsl="[0,0,100]" type="submit">
+                Play!
+              </button>
+            </form>
+
+            <em>Note: (Multiplayer may be jittery!)</em>
+          </div>
+        </div>
+        <canvas id="canvas"> Your browser does not support canvas. </canvas>
+      </div>
+    </div>
+  </body>
+</html>
